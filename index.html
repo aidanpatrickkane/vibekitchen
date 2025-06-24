@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VibeKitchen - Share Your Vibe Coded Projects</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+      background-color: #f4f4f4;
+    }
+    header {
+      background: #333;
+      color: #fff;
+      padding: 40px 20px;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5em;
+    }
+    header p {
+      margin-top: 10px;
+      font-size: 1.2em;
+    }
+    .featured {
+      padding: 40px 20px;
+    }
+    .cards {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+    .card {
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      width: 300px;
+      padding: 20px;
+    }
+    .card h3 {
+      margin-top: 0;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Welcome to VibeKitchen</h1>
+    <p>Upload and discover vibe coded projects from around the world.</p>
+  </header>
+  <section class="featured">
+    <h2>Featured Projects</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>Project One</h3>
+        <p>A cool vibe-coded experiment showcasing interactive art.</p>
+      </div>
+      <div class="card">
+        <h3>Project Two</h3>
+        <p>An innovative music visualizer built with vibe coding techniques.</p>
+      </div>
+      <div class="card">
+        <h3>Project Three</h3>
+        <p>A playful creative coding piece exploring generative patterns.</p>
+      </div>
+    </div>
+  </section>
+</body>
+</html>
+
+ (cd "$(git rev-parse --show-toplevel)" && git apply --3way <<'EOF' 
+diff --git a//dev/null b/index.html
+index 0000000000000000000000000000000000000000..8ec1251d0dde8334de9ece22ba7392fd902a5b5b 100644
+--- a//dev/null
++++ b/index.html
+@@ -0,0 +1,73 @@
++<!DOCTYPE html>
++<html lang="en">
++<head>
++  <meta charset="UTF-8">
++  <meta name="viewport" content="width=device-width, initial-scale=1.0">
++  <title>VibeKitchen - Share Your Vibe Coded Projects</title>
++  <style>
++    body {
++      font-family: Arial, sans-serif;
++      margin: 0;
++      padding: 0;
++      line-height: 1.6;
++      background-color: #f4f4f4;
++    }
++    header {
++      background: #333;
++      color: #fff;
++      padding: 40px 20px;
++      text-align: center;
++    }
++    header h1 {
++      margin: 0;
++      font-size: 2.5em;
++    }
++    header p {
++      margin-top: 10px;
++      font-size: 1.2em;
++    }
++    .featured {
++      padding: 40px 20px;
++    }
++    .cards {
++      display: flex;
++      flex-wrap: wrap;
++      justify-content: center;
++      gap: 20px;
++    }
++    .card {
++      background: white;
++      border-radius: 8px;
++      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
++      width: 300px;
++      padding: 20px;
++    }
++    .card h3 {
++      margin-top: 0;
++    }
++  </style>
++</head>
++<body>
++  <header>
++    <h1>Welcome to VibeKitchen</h1>
++    <p>Upload and discover vibe coded projects from around the world.</p>
++  </header>
++  <section class="featured">
++    <h2>Featured Projects</h2>
++    <div class="cards">
++      <div class="card">
++        <h3>Project One</h3>
++        <p>A cool vibe-coded experiment showcasing interactive art.</p>
++      </div>
++      <div class="card">
++        <h3>Project Two</h3>
++        <p>An innovative music visualizer built with vibe coding techniques.</p>
++      </div>
++      <div class="card">
++        <h3>Project Three</h3>
++        <p>A playful creative coding piece exploring generative patterns.</p>
++      </div>
++    </div>
++  </section>
++</body>
++</html>
+ 
+EOF
+)
